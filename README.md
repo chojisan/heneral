@@ -1,2 +1,2 @@
-# heneral
+# Heneral
 Laravel Administration Panel
