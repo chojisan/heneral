@@ -1,0 +1,50 @@
+{
+    "name": "chojisan/heneral",
+    "description": "Laravel Administration Panel Package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Choji Takada",
+            "email": "chojitakada@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/chojisan/heneral",
+    "keywords": ["Laravel", "Administration Panel"],
+    "require": {
+        "illuminate/support": ">=5.0.1",
+        "nwidart/laravel-modules": "^3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chojisan\\Heneral\\": "src/",
+            "Chojisan\\Heneral\\Modules\\": "src/Modules/"
+        },
+        "classmap": [
+            "src/Http/Controllers",
+            "src/Modules/TemplateManager/Exceptions.php"
+        ],
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Chojisan\\Heneral\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chojisan\\Heneral\\HeneralServiceProvider"
+            ],
+            "aliases": {
+                "Heneral": "Chojisan\\Heneral\\Facades\\Heneral",
+                "Template" : "Chojisan\\Heneral\\Modules\\TemplateManager\\Facades\\Template"
+            }
+        }
+    }
+}
