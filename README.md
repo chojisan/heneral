@@ -7,10 +7,10 @@ Laravel Administration Panel
 * Menu Manager
 * Template Manager
 * User Accounts
-* * Groups
-* * Roles
-* * Permission
+  * Groups
+  * Roles
+  * Permission
 * Settings
-* * System Information
-* * Configuration
-* * Logs 
+  * System Information
+  * Configuration
+  * Logs 
